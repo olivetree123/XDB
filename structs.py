@@ -8,6 +8,6 @@ class IndexStruct(ctypes.Structure):
         # ("table", ctypes.c_char * LENGTH),
         # ("key", ctypes.c_char * LENGTH),
         ("value", ctypes.c_int),
-        ("offset", ctypes.c_int),
+        # ("offset", ctypes.c_int),
         ("data_offset", ctypes.c_int)
     ]

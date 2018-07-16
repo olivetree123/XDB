@@ -12,6 +12,8 @@ from utils.functions import to_bytes, db_file_path
 
 class Node:
     def __init__(self, val):
+        if not isinstance(val, IndexStruct):
+            raise Exception("val should be IndexStruct, but {} found".format(type(val)))
         self.l = None
         self.r = None
         self.v = val
